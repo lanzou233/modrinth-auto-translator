@@ -223,9 +223,9 @@ jobs:
       - name: Translate content
         if: steps.check-translations.outputs.has-translations == 'true' && !inputs.skip_translation
         env:
-          TRANSLATION_API_KEY: ${{ secrets.TRANSLATION_API_KEY }}
-          TRANSLATION_API_URL: ${{ secrets.TRANSLATION_API_URL }}
-          TRANSLATION_MODEL: ${{ secrets.TRANSLATION_MODEL }}
+          TRANSLATION_API_KEY: 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
+          TRANSLATION_API_URL: https://api.openai.com/v1/chat/completions
+          TRANSLATION_MODEL: gpt-3.5-turbo
         run: |
           cd translator
           echo "🌍 Starting translation process..."
