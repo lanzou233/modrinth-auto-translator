@@ -223,7 +223,7 @@ jobs:
       - name: Translate content
         if: steps.check-translations.outputs.has-translations == 'true' && !inputs.skip_translation
         env:
-          TRANSLATION_API_KEY: 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
+          TRANSLATION_API_KEY: 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
           TRANSLATION_API_URL: https://api.openai.com/v1/chat/completions
           TRANSLATION_MODEL: gpt-3.5-turbo
         run: |
